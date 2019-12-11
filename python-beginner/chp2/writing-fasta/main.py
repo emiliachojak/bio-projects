@@ -14,8 +14,8 @@ sequences = ["ATCGTACGATCGATCGATCGCTAGACGTATCG", "actgatcgacgatcgatcgatcacgact",
 correct_sequences = []
 
 for seq in sequences:
-    a = seq.replace("-", "")
-    correct_sequences.append(a.upper())
+    a = (seq.replace("-", "")).upper()
+    correct_sequences.append(a)
 
 headers_and_seqs = dict(zip(headers, correct_sequences))
 
